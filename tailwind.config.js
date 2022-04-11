@@ -6,12 +6,12 @@ module.exports = {
   plugins: [require('daisyui')],
   daisyui: {
     styled: true,
-    themes: ['autumn', 'forest', 'cmyk'],
+    themes: ['autumn', 'synthwave', 'cmyk'],
+    darkTheme: 'synthwave',
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: '',
-    darkTheme: 'forest',
   },
 }
