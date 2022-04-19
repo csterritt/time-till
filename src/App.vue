@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row items-center min-h-16 md:mt-2 mb-4 md:mx-4 shadow-lg bg-secondary text-neutral-content rounded-box"
+    class="flex flex-row items-center min-h-16 md:mt-2 mb-4 md:mx-4 shadow-lg bg-secondary text-neutral-content md:rounded-box"
   >
     <div class="flex-1 px-2 mx-2">
       <span class="text-lg font-bold">Time until</span>
