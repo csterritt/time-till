@@ -23,7 +23,7 @@ then.setDate(24)
 then.setHours(13)
 const now = new Date()
 let days = `Now in the past!`
-if (now.getMonth() <= 7 && now.getDate() <= 23) {
+if (now.getMonth() < 7 || (now.getMonth() === 7 && now.getDate() <= 23)) {
   let e = new Date(then)
   let b = new Date(now)
   let bMonth = b.getMonth()
