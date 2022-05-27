@@ -19,7 +19,7 @@
 const then = new Date()
 then.setFullYear(2022)
 then.setMonth(7)
-then.setDate(24)
+then.setDate(23)
 then.setHours(13)
 const now = new Date()
 let days = `Now in the past!`
