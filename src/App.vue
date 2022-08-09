@@ -9,7 +9,7 @@
 
   <div class="card w-96 bg-base-200 shadow-xl mx-6 w-fit">
     <div class="card-body">
-      <h2 class="card-title">Time until August 24, 2022:</h2>
+      <h2 class="card-title">Time until August 30, 2022:</h2>
       <p>About {{ days }}.</p>
     </div>
   </div>
@@ -19,7 +19,7 @@
 const then = new Date()
 then.setFullYear(2022)
 then.setMonth(7)
-then.setDate(23)
+then.setDate(29)
 then.setHours(13)
 const now = new Date()
 let days = `Now in the past!`
@@ -120,12 +120,14 @@ if (now.getMonth() < 7 || (now.getMonth() === 7 && now.getDate() <= 23)) {
   if (FirstMonthDiff !== bDays && eDay - 1 === eDays) {
     daysDiff = FirstMonthDiff
   }
-  days =
-    monthDiff +
-    ' month' +
-    (monthDiff === 1 ? ', ' : 's, ') +
-    daysDiff +
-    ' day' +
-    (daysDiff === 1 ? '' : 's')
+
+  days = ''
+  if (monthDiff > 0) {
+    days += monthDiff + ' month' + (monthDiff === 1 ? ', ' : 's, ')
+  }
+
+  if (daysDiff > 0) {
+    days += daysDiff + ' day' + (daysDiff === 1 ? '' : 's')
+  }
 }
 </script>
